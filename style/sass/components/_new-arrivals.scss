@@ -131,9 +131,6 @@ text-align: center;
 
 
 @include max-768 {
-    .price .current-price , .price .deleted{
-        font-size: 15px;
-    }
     .price .current-price {
         margin-inline-end: 0;
     }
@@ -153,21 +150,21 @@ text-align: center;
     .price{
         flex-direction: column;
         line-height: normal;
-        margin-bottom: 10px;
-        min-height: 50px;
+        height: 55px;
         justify-content: space-between;
+        margin: 0;
+        margin-bottom: 10px;
     }
     .like{
         width: 30px;
         height: 30px;
     }
     .item-desc .brand-name{
-        font-size: 14px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .newArrivals {
         padding : 20px 20px 75px 20px ;
