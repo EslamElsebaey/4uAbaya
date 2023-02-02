@@ -37,7 +37,7 @@
     display: block;
     height: 2px;
     width: 100%;
-   background-color: #000;
+   background-color: $main-color;
    transition: all 0.4s ease-in-out;
 }
 .open-bars .hamburger-lines .line1 {
@@ -61,7 +61,7 @@
         line-height: 30px;
     }
     a{
-        color: #000;
+        color: $main-color;
         font-weight: 400;
         text-transform: capitalize;
         &:hover{
@@ -196,7 +196,7 @@ margin-inline-start: 25px;
 }
 .search-holder-input input{
     width: 100%;
-    color: #000;
+    color: $main-color;
     height: 100%;
     border: 1px solid transparent;
     display: block;
@@ -343,10 +343,10 @@ nav{
         align-items: center;
         a{
             font-size: 16px;
-            color: #000000;
+            color: $main-color;
             font-weight: 500;
             text-transform: capitalize;
-            transition: all linear .3s;
+            transition: all linear .2s;
             position: relative;
             &:hover{
                 text-decoration: none;
@@ -371,7 +371,7 @@ nav{
     cursor: pointer;
     i {
         font-size: 28px;
-        color: #000;
+        color: $main-color;
        
     }
 }
@@ -390,7 +390,7 @@ nav{
 .openSearch-btn{
     cursor: pointer;
     i{
-        color: #000;
+        color: $main-color;
         font-size: 23px;
         transform: scaleX(-1);
     }
@@ -407,6 +407,8 @@ nav{
 
 
 @include max-992 {
+
+
     .service-order{
         width: 100%;
         justify-content: center;
@@ -417,20 +419,26 @@ nav{
     .top-header{
         display: none;
     }
-    // .header-content{
-    //     flex-wrap: wrap;
-    // }
     .logo {
         img {
-            width: 150px;
+            width: 80px;
             max-width: 100%;
         }
+    }
+    .favourite{
+        display: none;
+    }
+    .cart, .favourite, .account-text, .openMySearch{
+        margin-inline-start : 20px;
     }
   .search-holder{
     width: 100%;
   }
   .search-holder .search-holder-input{
     width: 50%;
+  }
+  .lang{
+    margin-inline-start : 20px;
   }
 }
 
@@ -515,7 +523,7 @@ nav{
         padding: 0;
         &:hover{
             &::after{
-                color: #000;
+                color: $main-color;
             }
         }
         a{
@@ -543,7 +551,7 @@ nav{
         display: none;
             
             li a {
-                color: #000;
+                color: $main-color;
                 font-weight: 400;
                 font-size: 15px;
             }
@@ -603,7 +611,7 @@ nav{
             align-items: center;
             font-size: 18px;
             &:hover{
-                color: #000;
+                color: $main-color;
             }
             &::after{
                 height: auto;
@@ -614,7 +622,7 @@ nav{
       display: block;
         i{
             font-size: 24px;
-            color: #000;
+            color: $main-color;
             width: 100%;
             height: 100%;
             display: block;

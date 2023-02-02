@@ -50,7 +50,7 @@ $(".menu-bars").click(function(){
 // main Swiper 
 const mainSwiper = new Swiper('.mainBanner .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
@@ -75,7 +75,7 @@ const mainSwiper = new Swiper('.mainBanner .swiper', {
 
 const newArrivalSwiper = new Swiper(' .newArrivals .swiper', {
   loop: true,
-  // autoplay : true , 
+  autoplay : true , 
   draggable: true,
   
   pagination: {

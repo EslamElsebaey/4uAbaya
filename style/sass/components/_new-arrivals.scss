@@ -7,11 +7,11 @@
         bottom: -28px;
     }
     .swiper-pagination-bullet{
-        background: #000;
+        background: $main-color;
         opacity: .4;
     }
     .swiper-pagination-bullet-active{
-        background: #000;
+        background: $main-color;
         opacity: 1;
     }
 }
@@ -75,7 +75,7 @@
     }
     .brand-name {
         font-size: 16px;
-        color: #000000;
+        color: $main-color;
         margin: 0;
         font-weight: 500;
         text-align: center;
@@ -99,7 +99,7 @@ text-align: center;
     margin: 10px 0;
     .current-price{
         font-size: 18px;
-        color: #000000;
+        color: $main-color;
         font-weight: 700;
         margin-bottom: 0;
         margin-inline-end: 7px;

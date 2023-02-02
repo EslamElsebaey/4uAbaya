@@ -6,7 +6,7 @@ footer{
     }
     .footer-title{
         font-size: 18px;
-        color: #000000;
+        color: $main-color;
         color: $main-color;
         font-weight: 700;
         margin-bottom: 30px;
@@ -80,7 +80,7 @@ ul li {
 .newsletter{
     .newsletter-text{
         font-size: 16px;
-        color: #000000;
+        color: $main-color;
         font-weight: 500;
         margin: 0;
         margin-top: 10px;
@@ -199,7 +199,7 @@ img{
     }
     i {
         font-size: 22px;
-        color: #000;
+        color: $main-color;
         transition: all linear .3s;
      
     }

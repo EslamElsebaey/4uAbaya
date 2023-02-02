@@ -44,7 +44,7 @@ html[dir=ltr] body {
 
 .title-text {
   font-size: 30px;
-  color: #000000;
+  color: #000;
   font-weight: 700;
   text-align: center;
   text-transform: capitalize;
@@ -594,10 +594,10 @@ nav {
 }
 .nav-ul > li a {
   font-size: 16px;
-  color: #000000;
+  color: #000;
   font-weight: 500;
   text-transform: capitalize;
-  transition: all linear 0.3s;
+  transition: all linear 0.2s;
   position: relative;
 }
 .nav-ul > li a:hover {
@@ -669,14 +669,25 @@ nav {
     display: none;
   }
   .logo img {
-    width: 150px;
+    width: 80px;
     max-width: 100%;
+  }
+  .favourite {
+    display: none;
+  }
+  .cart, .favourite, .account-text, .openMySearch {
+    -webkit-margin-start: 20px;
+            margin-inline-start: 20px;
   }
   .search-holder {
     width: 100%;
   }
   .search-holder .search-holder-input {
     width: 50%;
+  }
+  .lang {
+    -webkit-margin-start: 20px;
+            margin-inline-start: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -983,7 +994,7 @@ nav {
 }
 .item-desc .brand-name {
   font-size: 16px;
-  color: #000000;
+  color: #000;
   margin: 0;
   font-weight: 500;
   text-align: center;
@@ -1009,7 +1020,7 @@ nav {
 }
 .price .current-price {
   font-size: 18px;
-  color: #000000;
+  color: #000;
   font-weight: 700;
   margin-bottom: 0;
   -webkit-margin-end: 7px;
@@ -1271,7 +1282,7 @@ footer a:hover {
 }
 footer .footer-title {
   font-size: 18px;
-  color: #000000;
+  color: #000;
   color: #000;
   font-weight: 700;
   margin-bottom: 30px;
@@ -1339,7 +1350,7 @@ html[dir=ltr] .message input {
 
 .newsletter .newsletter-text {
   font-size: 16px;
-  color: #000000;
+  color: #000;
   font-weight: 500;
   margin: 0;
   margin-top: 10px;
@@ -1667,7 +1678,7 @@ html[dir=ltr] .send i {
 }
 .banner-desc h1 {
   font-size: 60px;
-  color: #000000;
+  color: #000;
   font-weight: 700;
   text-align: center;
   margin: 0;
@@ -1895,14 +1906,14 @@ html[dir=ltr] .send i {
   margin: 20px auto;
   font-size: 20px;
   line-height: 30px;
-  color: #000000;
+  color: #000;
   text-align: center;
   font-weight: 500;
 }
 
 .cat-desc-title {
   font-size: 36px;
-  color: #000000;
+  color: #000;
   font-weight: 700;
   text-align: center;
 }
@@ -1951,7 +1962,7 @@ section.category:nth-of-type(even) .cat-parent {
 }
 
 .logo-img-big {
-  width: 55px !important;
+  width: 50px !important;
 }
 
 .overflow-hidden-body {

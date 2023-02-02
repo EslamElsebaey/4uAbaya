@@ -7,7 +7,7 @@
         text-align: center;
     }
     .swiper-pagination-bullet{
-        background: #000;
+        background: $main-color;
         opacity: .4;
     }
     
@@ -47,7 +47,7 @@
    transform: translateY(-50%);
     h1{
         font-size: 60px;
-        color: #000000;
+        color: $main-color;
         font-weight: 700;
         text-align: center;
         margin: 0;
@@ -61,7 +61,7 @@
     width: 160px;
     height: 45px;
     border-radius: 23px;
-    background-color: #000;
+    background-color: $main-color;
     font-size: 18px;
     color: #ffffff;
     font-weight: 700;
@@ -83,7 +83,7 @@
         transform-origin: 50%;
         transition-property: transform;
         transition-duration: 0.5s;
-        background-color: #000;
+        background-color: $main-color;
         transition-timing-function: ease-out;
     }
     &:hover{
@@ -129,7 +129,7 @@
         &:hover{
             background-color: #fff;
             i{
-                color: #000;
+                color: $main-color;
             }
         }
     }
@@ -151,7 +151,7 @@
 
 .mainBanner{
     .swiper-pagination-bullet-active{
-        background: #000 ;
+        background: $main-color ;
         opacity: 1;
     }
 }
