@@ -1,0 +1,126 @@
+
+.show-user-account{
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+.logo-img-big{
+    width: 55px !important;
+}
+.overflow-hidden-body {
+  overflow: hidden;
+}
+  
+  .icon-color{
+  color: $second-color !important;
+  }
+
+  .showToTop{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .fixed{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 11%);
+    background-color: #fff;
+    transition: all linear .5s;
+  }
+
+
+  
+.fixsedt {
+    top: -150px;
+    transition: all linear .5s;
+  }
+
+  
+.swiper-pagination-bullet-active{
+    background-color: $second-color;
+  }
+
+  .header-padding-30{
+    padding-left: 30px ;
+    padding-right: 30px ;
+  }
+
+  
+@include max-768 {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .title-text{
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+    .fixed-whatsapp{
+      width: 50px;
+      height: 50px;
+      i {
+        font-size: 30px;
+      }
+    }
+    .toTop{
+      right: 19px;
+      bottom: 80px;
+    }
+   
+  }
+
+
+  
+@media screen and (min-width : 768px) and (max-width : 992px) {
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+      right: 30px;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+      left: 30px;
+    }
+  
+  .quick-drop{
+    max-height: none;
+  }
+  
+  .contact ul li a{
+    font-size: 16px;
+  }
+  footer h4{
+    font-size: 16px;
+  }
+  .message input{
+    padding-left:  25px;
+    padding-right: 25px;
+  }
+  .copyright{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  }
+  
+
+  
+@include min-1200{
+    .container, .container-lg, .container-md, .container-sm, .container-xl{
+      max-width: 1170px;
+    }
+  }
+
+  @include max-992 {
+    .swiper-button-prev, .swiper-rtl .swiper-button-next , .swiper-button-next, .swiper-rtl .swiper-button-prev{
+      display: none;
+    }
+  
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+      position: absolute;
+      bottom: -35px;
+    }
+    
+  
+  }
+  
+  

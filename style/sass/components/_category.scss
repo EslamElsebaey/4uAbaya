@@ -1,0 +1,121 @@
+.category{
+    margin: 30px 0;
+}
+.cat-img{
+    display: flex;
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+    justify-content: flex-end;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        top: 0;
+        left: -90%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+    }
+    &:hover{
+        &::before{
+            animation: shine .75s;
+        }
+        img{
+            filter: grayscale(0);
+        }
+    }
+    img{
+        display: block;
+        max-width: 460px;
+        width: 100%;
+        transition: all linear .2s;
+        filter: grayscale(1);
+    }
+  
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+.cat-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-desc{
+    text-align: center;
+   
+}
+.cat-desc-text{
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+}
+.cat-desc-title{
+    font-size: 36px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+}
+
+ 
+ .cat-parent:hover .cat-img:not(:hover) {
+   img{
+    filter: grayscale(0);
+   }
+  }
+
+
+
+section.category:nth-of-type(even) .cat-parent {
+    flex-direction: row-reverse;
+  }
+
+
+  .cat-desc-content{
+    max-width: 72%;
+    margin: auto;
+  }
+
+
+  @include max-768 {
+    section.category:nth-of-type(odd) .cat-parent {
+        flex-direction: column;
+      }
+    section.category:nth-of-type(even) .cat-parent {
+        flex-direction: column;
+      }
+      .cat-desc-title{
+        font-size: 20px;
+      }
+      .cat-desc-text{
+        font-size: 16px;
+      }
+      .category{
+        .shopNow{
+            width: 140px;
+            height: 40px;
+            border-radius: 25px;
+        }
+      }
+      .cat-desc-text{
+        margin: 15px 0;
+      }
+      .cat-desc-content{
+        max-width: 100%;
+      }
+  }

@@ -1,0 +1,212 @@
+.newArrivals{
+   
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: -28px;
+    }
+    .swiper-pagination-bullet{
+        background: #000;
+        opacity: .4;
+    }
+    .swiper-pagination-bullet-active{
+        background: #000;
+        opacity: 1;
+    }
+}
+// new Arrivals
+.newArrivals{
+    background-color: #fff;
+    position: relative;
+    padding: 85px 30px 140px;
+    .img-holder{
+        text-align: center;
+    }
+ }
+
+
+
+
+
+.product-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+.like{
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    inset-inline-end: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+    &:hover{
+        background-color: $second-color;
+        i {
+            color: #fff;
+        }
+    }
+    i{
+        font-size: 24px;
+        color: #8b8b8b;
+        transition: all linear .2s;
+    }
+}
+.item-desc{
+    text-align: center;
+    width: 100%;
+    padding: 15px 20px;
+    > a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .brand-name {
+        font-size: 16px;
+        color: #000000;
+        margin: 0;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+        transition: all linear .2s;
+        &:hover{
+            color: $second-color;
+        }
+    }
+}
+.product-id{
+font-size: 16px;
+color: #b3b3b3;
+text-align: center;
+}
+.price{
+    width: 100%;
+   justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    .current-price{
+        font-size: 18px;
+        color: #000000;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-inline-end: 7px;
+    }
+    .deleted{
+        font-size: 16px;
+        text-decoration: line-through;
+        color: #808080;
+        font-weight: 400;
+    }
+}
+
+
+.img-holder{
+    position: relative;
+    display: block;
+    width: 100%;
+    &:hover .addTocart{
+        opacity: 1;
+        visibility: visible;
+    }
+    img{
+        width: 100%;
+       filter: grayscale(1);
+        display: block;
+    }
+}
+
+
+
+@include max-768 {
+    .price .current-price , .price .deleted{
+        font-size: 15px;
+    }
+    .price .current-price {
+        margin-inline-end: 0;
+    }
+    .item-desc{
+        padding: 7px 6px;
+    }
+    .like i{
+        font-size: 20px;
+    }
+    .add{
+       padding: 7px 17px;
+        i {font-size: 20px;}
+        span {
+            font-size: 14px;
+        }
+    }
+    .price{
+        flex-direction: column;
+        line-height: normal;
+        margin-bottom: 10px;
+        min-height: 50px;
+        justify-content: space-between;
+    }
+    .like{
+        width: 30px;
+        height: 30px;
+    }
+    .item-desc .brand-name{
+        font-size: 14px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        margin-bottom: 10px;
+    }
+    .newArrivals {
+        padding : 20px 20px 75px 20px ;
+        .newArrivals .swiper-horizontal > .swiper-pagination-bullets, .newArrivals .swiper-pagination-bullets.swiper-pagination-horizontal, .newArrivals .swiper-pagination-custom, .newArrivals .swiper-pagination-fraction{
+            bottom: -32px;
+        }
+    }
+    .bestseller  {
+        padding: 50px 0 80px 0;
+    }
+}
+
+
+
+@media screen and (max-width : 370px) {
+    .add{
+        padding: 7px 13px;
+    }
+}
+
+@include min-768 {
+    .add {
+        &:hover{
+            background-color: $second-color;
+        }
+    }
+    .img-holder{
+        overflow: hidden;
+    }
+    .img-holder{
+        img{
+            transition: all linear .2s;
+        }
+        &:hover{
+            img{
+              filter: grayscale(0);
+              transform: scale(1.1);
+            }
+            
+        }
+    } 
+}

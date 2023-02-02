@@ -1,0 +1,249 @@
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Dubai' ;
+}
+*{
+  margin: 0 ;
+  padding: 0;
+}
+
+
+html[dir = "rtl"] {
+  body{
+    text-align: right;
+  }
+}
+
+html[dir = "ltr"] {
+  body{
+    text-align: left;
+  }
+}
+.item-parent{
+  position: relative;
+}
+
+
+.title-text {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+img {
+  image-rendering: -webkit-optimize-contrast ;
+  object-fit: cover;
+}
+
+.ul-es {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after{
+  content: "";
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+  content: "";
+}
+
+.swiper-button-next, .swiper-button-prev{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba($color: #000000, $alpha: .2);
+  border-radius: 50%;
+  transition: all linear .2s;
+  &:hover{
+    background-color: $second-color;
+  }
+  i{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: -60px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: -60px;
+}
+
+
+.ancor-btn {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  &:hover{
+    text-decoration: none;
+    color: black;
+  }
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:focus{
+    text-decoration: none;
+  }
+}
+
+
+
+// ::-webkit-scrollbar {
+//   width: 8px;
+//   height: 3px;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background:  $second-color;
+//   border-radius: 15px;
+// }
+
+// ::-webkit-scrollbar-track{
+//   background-color:  $main-color;
+// }
+
+
+// preloader
+
+
+.preloader {
+  pointer-events: none;
+  user-select: none;
+}
+.progress {
+  position: fixed;
+  z-index: 99999;
+  top: 0; 
+  width: 100%;
+  height: 5px;
+  background-color: $second-color;
+  overflow: hidden;
+}
+
+
+
+.progress-bar {
+  animation: progress 6s ease infinite;
+  background-color: $main-color;
+}
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
+
+// back-up
+.toTop{
+  width: 40px;
+height: 40px;
+filter: drop-shadow(0 0 12px rgba(0,0,0,0.15));
+background-color: #ffffff;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 25px;
+  bottom: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  z-index: 10;
+  transition: all linear .3s;
+  opacity: 0;
+  visibility: hidden;
+  .toTop-icon{
+    font-size: 20px;
+    color: #808080;
+      transition: all linear .2s;
+  }
+}
+
+  
+.fixsedt {
+  top: -130px;
+  transition: all linear .5s;
+}
+
+
+
+
+
+// fixed whatsapp
+
+.fixed-whatsapp{
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25d366;
+  animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+  text-decoration: none;
+  &:focus{
+    text-decoration: none;
+  }
+  i {
+    font-size: 36px;
+    color: #ffffff;
+  }
+}
+
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 #25d366;
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
+}
+
+
+@include min-768 {
+  .toTop{
+    &:hover{
+      background-color: #000;
+      i{
+        color: #fff;
+      }
+     
+  }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

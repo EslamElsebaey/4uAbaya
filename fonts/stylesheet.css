@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Dubai';
+    src: url('Dubai-Bold.woff2') format('woff2'),
+        url('Dubai-Bold.woff') format('woff'),
+        url('Dubai-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dubai';
+    src: url('Dubai-Regular.woff2') format('woff2'),
+        url('Dubai-Regular.woff') format('woff'),
+        url('Dubai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dubai';
+    src: url('Dubai-Medium.woff2') format('woff2'),
+        url('Dubai-Medium.woff') format('woff'),
+        url('Dubai-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
