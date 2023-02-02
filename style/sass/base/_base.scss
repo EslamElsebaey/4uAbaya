@@ -98,19 +98,19 @@ img {
 
 
 
-// ::-webkit-scrollbar {
-//   width: 8px;
-//   height: 3px;
-// }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
 
-// ::-webkit-scrollbar-thumb {
-//   background:  $second-color;
-//   border-radius: 15px;
-// }
+::-webkit-scrollbar-thumb {
+  background:  $second-color;
+  border-radius: 15px;
+}
 
-// ::-webkit-scrollbar-track{
-//   background-color:  $main-color;
-// }
+::-webkit-scrollbar-track{
+  background-color:  $main-color;
+}
 
 
 // preloader
