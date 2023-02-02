@@ -939,7 +939,7 @@ nav {
   display: none;
 }
 .newArrivals .swiper-horizontal > .swiper-pagination-bullets, .newArrivals .swiper-pagination-bullets.swiper-pagination-horizontal, .newArrivals .swiper-pagination-custom, .newArrivals .swiper-pagination-fraction {
-  bottom: -28px;
+  bottom: -32px;
 }
 .newArrivals .swiper-pagination-bullet {
   background: #000;
