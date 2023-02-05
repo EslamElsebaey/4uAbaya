@@ -106,17 +106,21 @@ section.category:nth-of-type(even) .cat-parent {
         font-size: 16px;
       }
       .category{
+        margin: 50px 0;
         .shopNow{
             width: 140px;
             height: 40px;
             border-radius: 25px;
         }
       }
+      .category:first-of-type{
+        margin-top: 30px;
+      }
       .cat-desc-text{
         margin: 15px 0;
         text-align: justify;
         text-align-last: center;
-        line-height: 28px;
+        line-height: 1.6;
       }
       .cat-desc-content{
         max-width: 100%;

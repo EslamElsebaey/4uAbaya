@@ -1036,7 +1036,7 @@ nav {
     margin-bottom: 5px;
   }
   .newArrivals {
-    padding: 20px 20px 75px 20px;
+    padding: 10px 20px 75px 20px;
   }
   .newArrivals .newArrivals .swiper-horizontal > .swiper-pagination-bullets, .newArrivals .newArrivals .swiper-pagination-bullets.swiper-pagination-horizontal, .newArrivals .newArrivals .swiper-pagination-custom, .newArrivals .newArrivals .swiper-pagination-fraction {
     bottom: -32px;
@@ -1893,17 +1893,23 @@ section.category:nth-of-type(even) .cat-parent {
   .cat-desc-text {
     font-size: 16px;
   }
+  .category {
+    margin: 50px 0;
+  }
   .category .shopNow {
     width: 140px;
     height: 40px;
     border-radius: 25px;
+  }
+  .category:first-of-type {
+    margin-top: 30px;
   }
   .cat-desc-text {
     margin: 15px 0;
     text-align: justify;
     -moz-text-align-last: center;
          text-align-last: center;
-    line-height: 28px;
+    line-height: 1.6;
   }
   .cat-desc-content {
     max-width: 100%;
