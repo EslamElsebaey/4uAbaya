@@ -1,6 +1,17 @@
 $(document).ready(function(){
 
 
+      // preloader
+      setTimeout(function () {
+        $(".preloader").css({
+          opacity : "0" , 
+          visibility : "hidden" , 
+        })
+      }, 2000);
+  
+  
+  /********************************************************************************* */
+
   // show and hide search box
 
 $(".openMySearch").click(function(){
@@ -34,16 +45,7 @@ $(".menu-bars").click(function(){
 
 
 /********************************************************************************* */
-    // preloader
-    setTimeout(function () {
-      $(".preloader").css({
-        opacity : "0" , 
-        visibility : "hidden" , 
-      })
-    }, 2000);
 
-
-/********************************************************************************* */
 
     // SWIPERS 
 
@@ -114,8 +116,6 @@ if($(window).width() < 992 ){
     $(" .account-text .header-dropdown").toggleClass("show-user-account")
   })
 }
-
-/********************************************************************************* */
 
 
 
@@ -201,6 +201,7 @@ if($(window).width() < 768){
 })
 
 
+/********************************************************************************* */
 
 
 // fire wow

@@ -1,3 +1,10 @@
+
+body{
+    padding-top: 131.95px;
+}
+
+
+
 //  humburger icon
  
 .menu-bars {
@@ -287,6 +294,11 @@ header{
     padding: 10px 30px;
     background-color: #fff;
     transition: all linear .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
 }
 nav{
     transition: all linear .3s;
@@ -392,7 +404,9 @@ nav{
 
 
 @include max-992 {
-
+body{
+    padding-top: 100.85px;
+}
     .control-section .lang{
         display : none ;
     }
@@ -477,7 +491,9 @@ nav{
 
 @include max-768 {
 
-
+    body{
+        padding-top: 69.75px;
+    }
     .nav-ul{
         margin: 45px 0 0 0 !important;
     }

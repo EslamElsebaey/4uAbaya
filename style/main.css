@@ -256,6 +256,10 @@ img {
     color: #fff;
   }
 }
+body {
+  padding-top: 131.95px;
+}
+
 .menu-bars {
   position: relative;
   z-index: 300;
@@ -551,6 +555,11 @@ header {
   padding: 10px 30px;
   background-color: #fff;
   transition: all linear 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
 }
 
 nav {
@@ -658,6 +667,9 @@ nav {
 }
 
 @media only screen and (max-width: 991px) {
+  body {
+    padding-top: 100.85px;
+  }
   .control-section .lang {
     display: none;
   }
@@ -739,6 +751,9 @@ nav {
   }
 }
 @media only screen and (max-width: 767px) {
+  body {
+    padding-top: 69.75px;
+  }
   .nav-ul {
     margin: 45px 0 0 0 !important;
   }
@@ -1092,6 +1107,7 @@ nav {
 
 .feature-title1 {
   font-size: 18px;
+  line-height: 1.7;
   color: #ffffff;
   font-weight: 500;
   margin: 0;
@@ -1582,8 +1598,11 @@ html[dir=ltr] .send i {
   }
 }
 @media only screen and (min-width: 768px) {
+  .footer-item {
+    margin-top: 38px;
+  }
   .img-item {
-    transform: translateY(-20px);
+    margin-top: 0;
   }
 }
 .mainBanner .container {
