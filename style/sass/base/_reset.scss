@@ -48,6 +48,8 @@
     padding-right: 30px ;
   }
 
+
+
   
 @include max-768 {
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
@@ -111,6 +113,14 @@
   }
 
   @include max-992 {
+    
+   html[dir="ltr"] nav {
+    clip-path: circle(11.2% at 86% 14%);
+  }
+  html[dir="ltr"] .reset-left {
+    clip-path: circle(121.2% at 86% 14%);
+  }
+
     .swiper-button-prev, .swiper-rtl .swiper-button-next , .swiper-button-next, .swiper-rtl .swiper-button-prev{
       display: none;
     }

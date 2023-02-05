@@ -109,7 +109,7 @@ const newArrivalSwiper = new Swiper(' .newArrivals .swiper', {
 
 // show user account in Mobile
 
-if($(window).width() < 768 ){
+if($(window).width() < 992 ){
   $(".account-text").click(function(){
     $(" .account-text .header-dropdown").toggleClass("show-user-account")
   })
