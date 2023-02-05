@@ -610,7 +610,6 @@ nav {
   font-size: 16px;
   color: #000;
   font-weight: 500;
-  text-transform: capitalize;
   transition: all linear 0.2s;
   position: relative;
 }
@@ -770,45 +769,6 @@ nav {
   }
   .li-drop .ul-drop::after {
     display: none;
-  }
-  .li-drop {
-    flex-direction: column;
-    align-items: flex-start !important;
-    -webkit-margin-end: 0 !important;
-            margin-inline-end: 0 !important;
-    padding: 0;
-  }
-  .li-drop:hover::after {
-    color: #000;
-  }
-  .li-drop a {
-    display: block;
-    width: 100%;
-  }
-  .li-drop a::after {
-    transition: all linear 0.3s;
-    position: absolute;
-    inset-inline-end: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-  }
-  .li-drop .ul-drop {
-    transition: none;
-    background-color: transparent;
-    padding: 0;
-    min-width: auto;
-    width: 100%;
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    padding-top: 5px;
-    display: none;
-  }
-  .li-drop .ul-drop li a {
-    color: #000;
-    font-weight: 400;
-    font-size: 15px;
   }
   .logo img {
     width: 40px;
@@ -1137,18 +1097,19 @@ nav {
 }
 
 .features-children {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .features-parent {
-  width: 850px;
+  width: 1000px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .feature-item {
+  width: 100%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1345,7 +1306,6 @@ html[dir=ltr] .message input {
 }
 .quick-links ul li a {
   color: #808080;
-  text-transform: capitalize;
   transition: all linear 0.2s;
   font-size: 16px;
   font-weight: 500;
@@ -1387,6 +1347,12 @@ html[dir=ltr] .message input {
   justify-content: center;
   transition: all linear 0.3s;
 }
+.message .send i {
+  transition: all linear 0.2s;
+}
+.message .send:hover i {
+  color: #b3b3b3;
+}
 .message input {
   width: 360px;
   height: 45px;
@@ -1424,7 +1390,6 @@ html[dir=ltr] .send i {
 
 .tasawk {
   text-decoration: none;
-  text-transform: capitalize;
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -1963,6 +1928,10 @@ section.category:nth-of-type(even) .cat-parent {
   }
   .cat-desc-text {
     margin: 15px 0;
+    text-align: justify;
+    -moz-text-align-last: center;
+         text-align-last: center;
+    line-height: 28px;
   }
   .cat-desc-content {
     max-width: 100%;

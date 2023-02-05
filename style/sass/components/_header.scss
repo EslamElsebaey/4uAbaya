@@ -345,7 +345,6 @@ nav{
             font-size: 16px;
             color: $main-color;
             font-weight: 500;
-            text-transform: capitalize;
             transition: all linear .2s;
             position: relative;
             &:hover{
@@ -516,47 +515,7 @@ nav{
     .li-drop .ul-drop::after{
         display: none;
     }
-    .li-drop {
-        flex-direction: column;
-        align-items: flex-start !important;
-        margin-inline-end: 0 !important;
-        padding: 0;
-        &:hover{
-            &::after{
-                color: $main-color;
-            }
-        }
-        a{
-            display: block;
-            width: 100%;
-            &::after{
-                transition: all linear .3s;
-                position: absolute;
-                inset-inline-end: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                font-size: 16px;
-            }
-        }
-       .ul-drop{
-        transition: none;
-        background-color: transparent;
-        padding: 0;
-        min-width: auto;
-        width: 100%;
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        padding-top: 5px;
-        display: none;
-            
-            li a {
-                color: $main-color;
-                font-weight: 400;
-                font-size: 15px;
-            }
-        }
-    }
+   
     .logo img{
         width: 40px;
         max-width: 100%;

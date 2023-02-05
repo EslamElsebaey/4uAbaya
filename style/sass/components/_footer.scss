@@ -62,7 +62,6 @@ ul li {
     line-height: 30px;
    a{
     color: #808080;
-    text-transform: capitalize;
     transition: all linear .2s;
     font-size: 16px;
     font-weight: 500;
@@ -106,6 +105,14 @@ ul li {
         align-items: center;
         justify-content: center;
         transition: all linear .3s;
+        i{
+            transition: all linear .2s;
+        }
+        &:hover{
+            i{
+                color: $second-color;
+            }
+        }
     }
     input{
         width: 360px;
@@ -146,7 +153,6 @@ html[dir="ltr"]{
 }
 .tasawk{
 text-decoration: none;
-text-transform: capitalize;
 display: flex;
 align-items: center;
 font-size: 14px;

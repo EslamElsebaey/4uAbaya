@@ -114,6 +114,9 @@ section.category:nth-of-type(even) .cat-parent {
       }
       .cat-desc-text{
         margin: 15px 0;
+        text-align: justify;
+        text-align-last: center;
+        line-height: 28px;
       }
       .cat-desc-content{
         max-width: 100%;

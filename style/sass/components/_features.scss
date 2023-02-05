@@ -5,16 +5,17 @@
     background-color: $main-color;
 }
 .features-children{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
 }
 .features-parent{
-    width: 850px;
+    width: 1000px;
     max-width: 100%;
     margin: 0 auto;
 }
 .feature-item{
+    width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
