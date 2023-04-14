@@ -1,13 +1,16 @@
+
+
+
+$(window).on("load", function () {
+  $(".preloader").fadeOut();
+})
+
+
+
 $(document).ready(function(){
 
 
-      // preloader
-      setTimeout(function () {
-        $(".preloader").css({
-          opacity : "0" , 
-          visibility : "hidden" , 
-        })
-      }, 2000);
+     
   
   
   /********************************************************************************* */
@@ -198,6 +201,9 @@ if($(window).width() < 768){
     $(this).toggleClass("icon-color");
   })
 }
+
+
+
 })
 
 
