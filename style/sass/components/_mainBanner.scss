@@ -200,16 +200,12 @@
 
 @include max-768{
     .mainBanner{
+        height: 200px;
         padding-top: 0;
         .shopNow{
             font-size: 15px;
             width: 100px;
             height: 30px;
-        }
-        .swiper-pagination-bullet{
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
         }
     }
     .banner-desc{

@@ -25,19 +25,6 @@ body {
   font-family: "Dubai";
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html[dir=rtl] body {
-  text-align: right;
-}
-
-html[dir=ltr] body {
-  text-align: left;
-}
-
 .item-parent {
   position: relative;
 }
@@ -112,6 +99,7 @@ img {
 }
 .ancor-btn:focus {
   text-decoration: none;
+  outline: none;
 }
 
 ::-webkit-scrollbar {
@@ -1554,9 +1542,6 @@ html[dir=ltr] .send i {
   .social i {
     font-size: 18px;
   }
-  .payments {
-    width: 100%;
-  }
   .maroof-vat-payment {
     justify-content: center;
   }
@@ -1752,17 +1737,13 @@ html[dir=ltr] .send i {
 }
 @media only screen and (max-width: 767px) {
   .mainBanner {
+    height: 200px;
     padding-top: 0;
   }
   .mainBanner .shopNow {
     font-size: 15px;
     width: 100px;
     height: 30px;
-  }
-  .mainBanner .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
   }
   .banner-desc {
     max-width: 100%;
@@ -1881,6 +1862,7 @@ section.category:nth-of-type(even) .cat-parent {
   }
   .cat-desc-title {
     font-size: 20px;
+    margin-top: 25px;
   }
   .cat-desc-text {
     font-size: 16px;
